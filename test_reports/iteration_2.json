@@ -1,0 +1,22 @@
+{
+  "summary": "Frontend-only verification for Yuj Studio bug fixes (iteration_2). All 6 test scenarios PASS: (1) Contact tile values now use Poppins (not Cormorant); (2) Gallery renders all 9 Pexels images with expected IDs and labels including Bharatanatyam, Yoga, Aerial Yoga, Zumba, Kathak, Western Dance, Teaching, Kids Drawing, Collab (all loaded, naturalWidth>0 after scroll); (3) MoreThanFitness feature cards use expected Pexels IDs (rental=6339495, trainers=37963580, collabs=8957646, all loaded); (4) Location retains 'Dumdum Private Road', 'Kolkata — 700074', 'Near WoW Momo' and iframe src contains coordinates 22.6216695/88.4073868 plus output=embed, and Open in Maps CTA points to https://maps.app.goo.gl/U9CvvtudBkcbPYPV6; (5) All 6 contact hrefs (whatsapp/phone/email/instagram/facebook/footerBook) match expected patterns; (6) Homepage loads with 0 console errors and no horizontal scroll at 1440x900.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Gallery images use loading='lazy' — naturalWidth is 0 until user scrolls near the section. Not a bug, but automated tests must scroll to the section and wait for images to complete before asserting load state (confirmed working after scrollIntoView + waitForFunction).",
+    "Location.jsx heading still says 'Dumdum Private Road Bus Stop.' which is retained per requirements. If in the future the client wants the heading to reflect the new Yuj Studio by Emon location name, this string will need updating (currently intentional per bug report)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All bug-fix items from iteration_2 verified passing via headless Playwright against REACT_APP_BACKEND_URL. Gallery/MTF images require scrollIntoView + waitForFunction on naturalWidth>0 due to loading='lazy'. All data-testids from constants/testIds/yuj.js are stable and unchanged.",
+  "rca of the issue": "N/A — verification only, no bugs found."
+}

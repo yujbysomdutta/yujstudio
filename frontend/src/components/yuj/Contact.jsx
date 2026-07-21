@@ -127,7 +127,7 @@ export default function Contact() {
                   <p className="text-[10px] tracking-[0.32em] uppercase text-[#B8B8B8]">
                     {l.label}
                   </p>
-                  <p className="mt-2 font-serif-display text-xl md:text-[22px] text-white leading-tight break-all">
+                  <p className="mt-2 text-lg md:text-xl text-white leading-tight font-medium tracking-tight break-all">
                     {l.value}
                   </p>
                 </a>

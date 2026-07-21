@@ -16,7 +16,7 @@ const CARDS = [
       "Photo & film shoots",
     ],
     image:
-      "https://images.pexels.com/photos/20278578/pexels-photo-20278578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/6339495/pexels-photo-6339495.jpeg?auto=compress&cs=tinysrgb&w=940",
   },
   {
     id: "trainers",
@@ -31,7 +31,7 @@ const CARDS = [
       "Housing communities",
     ],
     image:
-      "https://images.unsplash.com/photo-1780130487332-b6a96a31b024?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxwcmVtaXVtJTIweW9nYSUyMHN0dWRpbyUyMGRhcmt8ZW58MHx8fHwxNzg0NjQ2MjMzfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.pexels.com/photos/37963580/pexels-photo-37963580.jpeg?auto=compress&cs=tinysrgb&w=940",
   },
   {
     id: "collabs",
@@ -46,7 +46,7 @@ const CARDS = [
       "NGO & community events",
     ],
     image:
-      "https://images.pexels.com/photos/7672132/pexels-photo-7672132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/8957646/pexels-photo-8957646.jpeg?auto=compress&cs=tinysrgb&w=940",
   },
 ];
 

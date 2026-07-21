@@ -3,52 +3,52 @@ import { YUJ } from "@/constants/testIds/yuj";
 
 const IMAGES = [
   {
-    src: "https://images.pexels.com/photos/20134508/pexels-photo-20134508.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Indian classical dancer in traditional attire against black backdrop",
-    label: "Dance",
-    span: "row-span-2",
-  },
-  {
     src: "https://images.pexels.com/photos/26856873/pexels-photo-26856873.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Bharatanatyam dancer in a dim temple",
+    alt: "Bharatanatyam dancer in traditional attire indoors",
     label: "Bharatanatyam",
-  },
-  {
-    src: "https://images.pexels.com/photos/29490926/pexels-photo-29490926.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Yoga instructor assisting a handstand in a serene Indian studio",
-    label: "Yoga",
     span: "row-span-2",
-  },
-  {
-    src: "https://images.pexels.com/photos/38018854/pexels-photo-38018854.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Group yoga session by the river in Rishikesh",
-    label: "Rishikesh",
-  },
-  {
-    src: "https://images.pexels.com/photos/28518032/pexels-photo-28518032.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Indian classical dancer striking a pose in Kolkata",
-    label: "Classical",
-  },
-  {
-    src: "https://images.pexels.com/photos/26382819/pexels-photo-26382819.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Woman performing a headstand in a park in Dharamshala",
-    label: "Practice",
-    span: "row-span-2",
-  },
-  {
-    src: "https://images.pexels.com/photos/20035456/pexels-photo-20035456.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Senior woman doing yoga near the Ganges in Rishikesh",
-    label: "Ganges",
-  },
-  {
-    src: "https://images.pexels.com/photos/37781070/pexels-photo-37781070.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Man practicing yoga outdoors in India",
-    label: "Sadhana",
   },
   {
     src: "https://images.pexels.com/photos/31743029/pexels-photo-31743029.jpeg?auto=compress&cs=tinysrgb&w=940",
-    alt: "Yoga class in a brightly lit Indian studio",
-    label: "Studio",
+    alt: "Group yoga class in an indoor Indian studio",
+    label: "Yoga",
+  },
+  {
+    src: "https://images.pexels.com/photos/4323346/pexels-photo-4323346.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Aerial yoga with silks in an indoor studio",
+    label: "Aerial Yoga",
+    span: "row-span-2",
+  },
+  {
+    src: "https://images.pexels.com/photos/8957662/pexels-photo-8957662.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Women dancing joyfully in an indoor Zumba class",
+    label: "Zumba",
+  },
+  {
+    src: "https://images.pexels.com/photos/18086358/pexels-photo-18086358.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Indian classical dancer performing indoors",
+    label: "Kathak",
+  },
+  {
+    src: "https://images.pexels.com/photos/12085513/pexels-photo-12085513.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Indoor western dance class with smiling women",
+    label: "Western Dance",
+    span: "row-span-2",
+  },
+  {
+    src: "https://images.pexels.com/photos/29490926/pexels-photo-29490926.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Yoga instructor guiding a student indoors",
+    label: "Teaching",
+  },
+  {
+    src: "https://images.pexels.com/photos/4643353/pexels-photo-4643353.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Indian children in a drawing class indoors",
+    label: "Kids Drawing",
+  },
+  {
+    src: "https://images.pexels.com/photos/13831338/pexels-photo-13831338.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Professional trainer guiding a class indoors",
+    label: "Collab",
   },
 ];
 
