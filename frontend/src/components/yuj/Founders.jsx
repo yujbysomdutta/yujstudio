@@ -51,15 +51,15 @@ export default function Founders() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
+        <div className="mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 items-stretch">
           {FOUNDERS.map((f, i) => (
-            <Reveal key={f.id} delay={i * 0.1}>
+            <Reveal key={f.id} delay={i * 0.1} className="h-full">
               <article
                 data-testid={YUJ.founderCard(f.id)}
-                className="lift group rounded-3xl border border-white/[0.06] bg-[#141414] overflow-hidden"
+                className="lift group h-full rounded-3xl border border-white/[0.06] bg-[#141414] overflow-hidden"
               >
-                <div className="grid grid-cols-12 gap-0">
-                  <div className="col-span-12 md:col-span-5 relative aspect-[4/5] md:aspect-auto overflow-hidden">
+                <div className="grid grid-cols-12 gap-0 h-full">
+                  <div className="col-span-12 md:col-span-5 relative aspect-[4/5] md:aspect-auto md:min-h-full overflow-hidden">
                     <img
                       src={f.image}
                       alt={f.name}
@@ -72,11 +72,11 @@ export default function Founders() {
                       0{i + 1} / 02
                     </div>
                   </div>
-                  <div className="col-span-12 md:col-span-7 p-8 md:p-10 flex flex-col">
+                  <div className="col-span-12 md:col-span-7 p-8 md:p-10 flex flex-col h-full">
                     <p className="text-[10px] tracking-[0.32em] uppercase text-[#B8B8B8]">
                       {f.role}
                     </p>
-                    <h3 className="font-serif-display text-4xl md:text-5xl mt-2 text-white leading-tight">
+                    <h3 className="font-serif-display text-3xl md:text-4xl mt-2 text-white leading-[1.05]">
                       {f.name}
                       {f.honorific && (
                         <span className="italic text-[#E7C65C]">
@@ -85,15 +85,16 @@ export default function Founders() {
                         </span>
                       )}
                     </h3>
-                    <p className="mt-5 text-[#B8B8B8] text-sm md:text-[15px] leading-relaxed">
+                    <p className="mt-5 text-[#B8B8B8] text-[13px] md:text-[14px] leading-relaxed">
                       {f.bio}
                     </p>
-                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div className="hairline my-7 opacity-60" />
+                    <div className="mt-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <p className="text-[10px] tracking-[0.32em] uppercase text-[#E7C65C] mb-2">
                           Mission
                         </p>
-                        <p className="text-[#F6F6F6]/90 text-sm leading-relaxed">
+                        <p className="text-[#F6F6F6]/90 text-[13px] md:text-sm leading-relaxed">
                           {f.mission}
                         </p>
                       </div>
@@ -101,7 +102,7 @@ export default function Founders() {
                         <p className="text-[10px] tracking-[0.32em] uppercase text-[#E7C65C] mb-2">
                           Vision
                         </p>
-                        <p className="text-[#F6F6F6]/90 text-sm leading-relaxed">
+                        <p className="text-[#F6F6F6]/90 text-[13px] md:text-sm leading-relaxed">
                           {f.vision}
                         </p>
                       </div>
