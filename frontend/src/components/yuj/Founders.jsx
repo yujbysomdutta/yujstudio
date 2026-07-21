@@ -4,27 +4,29 @@ import { YUJ } from "@/constants/testIds/yuj";
 const FOUNDERS = [
   {
     id: "founder-1",
-    name: "Ananya Sen",
-    role: "Co-Founder · Practice Lead",
+    name: "Somdutta Majumder",
+    honorific: "Emon",
+    role: "Founder · Managing Director",
     image:
-      "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=900&auto=format&fit=crop",
-    bio: "A certified yoga teacher and dance-artist, Ananya trained in Rishikesh and taught across India before returning home to Kolkata to build a studio that felt like a sanctuary — for everyone.",
+      "https://customer-assets-eiarnc6j.emergentagent.net/job_yuj-studio-1/artifacts/1p9utkca_Emon.png",
+    bio: "With a Master's in Yoga, Somdutta transformed her own recovery from a slipped disc into a lifelong mission. Today, she combines yoga therapy, movement, and compassion to help people build strength, confidence, and healthier lives.",
     mission:
-      "To make wellness feel like a birthright, not a luxury — to keep the door open for every body.",
+      "Helping people rediscover strength through movement, yoga and mindful living.",
     vision:
-      "A generation that treats breath, art and movement as daily rituals — not weekend escapes.",
+      "To make Yuj Studio a trusted destination for wellness, learning and transformation.",
   },
   {
     id: "founder-2",
-    name: "Arjun Roy",
-    role: "Co-Founder · Studio Director",
+    name: "Sourav Saha",
+    honorific: null,
+    role: "Co-Founder · Strategy & Digital Advisor",
     image:
-      "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=900&auto=format&fit=crop",
-    bio: "A designer turned fitness entrepreneur, Arjun believes a studio is a stage. He shapes every corner of Yuj — the light, the sound, the silence — so that practice can happen without friction.",
+      "https://customer-assets-eiarnc6j.emergentagent.net/job_yuj-studio-1/artifacts/z81p1zkz_Sourav.png",
+    bio: "With a background in consulting and technology, Sourav guides Yuj Studio's digital experience, branding and strategic initiatives to help build a modern, community-driven wellness brand.",
     mission:
-      "To build a space so intentional it disappears — leaving only the practitioner and the practice.",
+      "Empowering wellness brands through purposeful strategy and digital innovation.",
     vision:
-      "Yuj as a network of neighbourhood wellness studios — one careful room at a time.",
+      "To make Yuj Studio a trusted and inspiring wellness brand for every community.",
   },
 ];
 
@@ -62,7 +64,7 @@ export default function Founders() {
                       src={f.image}
                       alt={f.name}
                       loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-[filter,transform] duration-[1200ms] group-hover:scale-[1.03]"
+                      className="absolute inset-0 w-full h-full object-cover object-top grayscale contrast-[1.05] brightness-95 transition-transform duration-[1200ms] group-hover:scale-[1.03]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r md:from-transparent md:to-[#141414]/60" />
                     <div className="absolute top-5 left-5 text-[10px] tracking-[0.32em] uppercase text-[#E7C65C] flex items-center gap-2">
@@ -76,6 +78,12 @@ export default function Founders() {
                     </p>
                     <h3 className="font-serif-display text-4xl md:text-5xl mt-2 text-white leading-tight">
                       {f.name}
+                      {f.honorific && (
+                        <span className="italic text-[#E7C65C]">
+                          {" "}
+                          ({f.honorific})
+                        </span>
+                      )}
                     </h3>
                     <p className="mt-5 text-[#B8B8B8] text-sm md:text-[15px] leading-relaxed">
                       {f.bio}
