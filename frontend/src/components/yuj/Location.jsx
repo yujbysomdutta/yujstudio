@@ -6,7 +6,7 @@ const MAP_QUERY = encodeURIComponent(
   "Dumdum Private Road Bus Stop, Kolkata 700074",
 );
 const MAP_EMBED = `https://www.google.com/maps?q=${MAP_QUERY}&output=embed`;
-const MAP_LINK = `https://www.google.com/maps?q=${MAP_QUERY}`;
+const MAP_LINK = "https://maps.app.goo.gl/U9CvvtudBkcbPYPV6";
 
 export default function Location() {
   return (

@@ -9,13 +9,13 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-const WA_NUMBER = "919999999999"; // placeholder
+const WA_NUMBER = "916290811205";
 const WA_MSG = encodeURIComponent(
   "Hello Yuj Studio, I'd like to book a free trial class.",
 );
 const WA_LINK = `https://wa.me/${WA_NUMBER}?text=${WA_MSG}`;
-const PHONE = "+91 99999 99999";
-const EMAIL = "hello@yujstudio.in";
+const PHONE = "+91 62908 11205";
+const EMAIL = "yujbysomdutta@gmail.com";
 
 const LINKS = [
   {
@@ -46,9 +46,9 @@ const LINKS = [
     id: "instagram",
     testId: YUJ.ctaInstagram,
     label: "Instagram",
-    value: "@yujstudio",
+    value: "@yujstudio.official",
     icon: Instagram,
-    href: "https://instagram.com/yujstudio",
+    href: "https://www.instagram.com/yujstudio.official/",
   },
   {
     id: "facebook",
@@ -56,7 +56,7 @@ const LINKS = [
     label: "Facebook",
     value: "/yujstudio",
     icon: Facebook,
-    href: "https://facebook.com/yujstudio",
+    href: "https://www.facebook.com/yujstudio",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function Contact() {
                   <p className="text-[10px] tracking-[0.32em] uppercase text-[#B8B8B8]">
                     {l.label}
                   </p>
-                  <p className="mt-2 font-serif-display text-2xl md:text-[26px] text-white leading-tight">
+                  <p className="mt-2 font-serif-display text-xl md:text-[22px] text-white leading-tight break-all">
                     {l.value}
                   </p>
                 </a>

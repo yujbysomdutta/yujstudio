@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { YUJ } from "@/constants/testIds/yuj";
 
 const WORDS = [
-  "Breathe",
+  "Breath",
   "Flow",
   "Transform",
   "Movement",
   "Mindfulness",
-  "Breathe",
+  "Breath",
   "Flow",
   "Transform",
   "Movement",

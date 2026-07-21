@@ -3,52 +3,52 @@ import { YUJ } from "@/constants/testIds/yuj";
 
 const IMAGES = [
   {
-    src: "https://images.unsplash.com/photo-1780130487332-b6a96a31b024?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxwcmVtaXVtJTIweW9nYSUyMHN0dWRpbyUyMGRhcmt8ZW58MHx8fHwxNzg0NjQ2MjMzfDA&ixlib=rb-4.1.0&q=85",
-    alt: "Yoga in a moody studio",
-    label: "Yoga",
-    span: "row-span-2",
-  },
-  {
-    src: "https://images.pexels.com/photos/4999487/pexels-photo-4999487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Aerial yoga in silks",
-    label: "Aerial",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1525426250015-4e6473cdbf17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxjb250ZW1wb3JhcnklMjBkYW5jZXIlMjBtb3Zpbmd8ZW58MHx8fHwxNzg0NjQ2MjMzfDA&ixlib=rb-4.1.0&q=85",
-    alt: "Contemporary dancer in motion",
+    src: "https://images.pexels.com/photos/20134508/pexels-photo-20134508.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Indian classical dancer in traditional attire against black backdrop",
     label: "Dance",
     span: "row-span-2",
   },
   {
-    src: "https://images.pexels.com/photos/27399870/pexels-photo-27399870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Yoga pose in low light",
-    label: "Practice",
+    src: "https://images.pexels.com/photos/26856873/pexels-photo-26856873.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Bharatanatyam dancer in a dim temple",
+    label: "Bharatanatyam",
   },
   {
-    src: "https://images.unsplash.com/photo-1617905204653-6128268919fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxkcmF3aW5nJTIwYXJ0JTIwY2xhc3MlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc4NDY0NjIzM3ww&ixlib=rb-4.1.0&q=85",
-    alt: "Drawing class close-up",
-    label: "Drawing",
-  },
-  {
-    src: "https://images.pexels.com/photos/7672132/pexels-photo-7672132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Dance class in a warm studio",
-    label: "Rhythm",
+    src: "https://images.pexels.com/photos/29490926/pexels-photo-29490926.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Yoga instructor assisting a handstand in a serene Indian studio",
+    label: "Yoga",
     span: "row-span-2",
   },
   {
-    src: "https://images.pexels.com/photos/6164039/pexels-photo-6164039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Aerial yoga in silks",
-    label: "Suspension",
+    src: "https://images.pexels.com/photos/38018854/pexels-photo-38018854.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Group yoga session by the river in Rishikesh",
+    label: "Rishikesh",
   },
   {
-    src: "https://images.pexels.com/photos/20278578/pexels-photo-20278578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    alt: "Ambient studio",
+    src: "https://images.pexels.com/photos/28518032/pexels-photo-28518032.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Indian classical dancer striking a pose in Kolkata",
+    label: "Classical",
+  },
+  {
+    src: "https://images.pexels.com/photos/26382819/pexels-photo-26382819.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Woman performing a headstand in a park in Dharamshala",
+    label: "Practice",
+    span: "row-span-2",
+  },
+  {
+    src: "https://images.pexels.com/photos/20035456/pexels-photo-20035456.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Senior woman doing yoga near the Ganges in Rishikesh",
+    label: "Ganges",
+  },
+  {
+    src: "https://images.pexels.com/photos/37781070/pexels-photo-37781070.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Man practicing yoga outdoors in India",
+    label: "Sadhana",
+  },
+  {
+    src: "https://images.pexels.com/photos/31743029/pexels-photo-31743029.jpeg?auto=compress&cs=tinysrgb&w=940",
+    alt: "Yoga class in a brightly lit Indian studio",
     label: "Studio",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1629617953524-618ec29589ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxkcmF3aW5nJTIwYXJ0JTIwY2xhc3MlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc4NDY0NjIzM3ww&ixlib=rb-4.1.0&q=85",
-    alt: "Hands drawing",
-    label: "Craft",
   },
 ];
 

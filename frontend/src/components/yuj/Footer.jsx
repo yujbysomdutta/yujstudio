@@ -35,7 +35,7 @@ export default function Footer() {
                   Yuj Studio
                 </div>
                 <div className="text-[10px] tracking-[0.28em] uppercase text-[#B8B8B8]">
-                  Breathe · Flow · Transform
+                  Breath · Flow · Transform
                 </div>
               </div>
             </div>
@@ -70,15 +70,15 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-[#F6F6F6]/90">
               <li>Dumdum Private Road Bus Stop</li>
               <li>Kolkata — 700074, Near WoW Momo</li>
-              <li>+91 99999 99999</li>
-              <li>hello@yujstudio.in</li>
+              <li>+91 62908 11205</li>
+              <li>yujbysomdutta@gmail.com</li>
             </ul>
             <div className="mt-8 flex items-center gap-3">
               {[
-                { icon: MessageCircle, href: "https://wa.me/919999999999", label: "WhatsApp" },
-                { icon: Instagram, href: "https://instagram.com/yujstudio", label: "Instagram" },
-                { icon: Facebook, href: "https://facebook.com/yujstudio", label: "Facebook" },
-                { icon: Mail, href: "mailto:hello@yujstudio.in", label: "Email" },
+                { icon: MessageCircle, href: "https://wa.me/916290811205", label: "WhatsApp" },
+                { icon: Instagram, href: "https://www.instagram.com/yujstudio.official/", label: "Instagram" },
+                { icon: Facebook, href: "https://www.facebook.com/yujstudio", label: "Facebook" },
+                { icon: Mail, href: "mailto:yujbysomdutta@gmail.com", label: "Email" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}

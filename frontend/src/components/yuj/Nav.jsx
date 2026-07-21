@@ -59,7 +59,7 @@ export default function Nav() {
               Yuj Studio
             </div>
             <div className="text-[10px] tracking-[0.28em] text-[#B8B8B8] uppercase mt-0.5">
-              Breathe · Flow · Transform
+              Breath · Flow · Transform
             </div>
           </div>
         </a>
