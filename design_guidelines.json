@@ -1,0 +1,179 @@
+{
+  "theme": "dark",
+  "project_name": "Yuj Studio",
+  "description": "Premium, modern, fully responsive static website for a wellness and movement brand.",
+  "target_audience": "People seeking premium wellness, movement, and creativity (Yoga, Dance, Arts) inspired by Apple, Equinox, Lululemon, and Nike Training.",
+  "design_philosophy": "Minimal, elegant, luxurious, and calming. Matte black base with gold accents. Large editorial typography. Generous whitespace. Real photography treated with spotlights and clipped frames.",
+  
+  "colors": {
+    "primary_bg": "#0B0B0B",
+    "secondary_bg": "#171717",
+    "accent_gold": "#D4AF37",
+    "highlight_gold": "#E7C65C",
+    "text_primary": "#F6F6F6",
+    "text_secondary": "#B8B8B8",
+    "rules": [
+      "Gold MUST ONLY be used as an accent (thin borders, signature line, small text, icon strokes).",
+      "Avoid bright gradients, colorful sections, and loud animations.",
+      "NEVER use generic full-screen gradients. If needed, use a subtle radial glow of #D4AF37 with 5% opacity.",
+      "Use #0B0B0B (Matte Black) as the foundation.",
+      "Ensure text contrast ratios (WCAG AA). Do not use pure transparent backgrounds over images; use glassmorphism with blur and a semi-transparent black overlay."
+    ]
+  },
+
+  "typography": {
+    "headings": {
+      "family": "Cormorant Garamond, serif",
+      "style": "Elegant, editorial, slightly tight tracking for massive headings.",
+      "scales": {
+        "h1": "text-5xl md:text-7xl lg:text-8xl tracking-tight leading-none",
+        "h2": "text-4xl md:text-5xl lg:text-6xl tracking-tight",
+        "h3": "text-2xl md:text-3xl lg:text-4xl"
+      }
+    },
+    "body": {
+      "family": "Poppins, sans-serif",
+      "style": "Clean, highly readable, generous line height.",
+      "scales": {
+        "large": "text-lg md:text-xl leading-relaxed text-[#B8B8B8]",
+        "base": "text-base leading-relaxed text-[#B8B8B8]",
+        "small": "text-sm uppercase tracking-widest"
+      }
+    },
+    "rules": [
+      "Use Cormorant Garamond exclusively for main and section headings.",
+      "Use Poppins exclusively for body, descriptions, buttons, and functional text.",
+      "Overlines and labels must be uppercase, tiny, with wide spacing (tracking-[0.2em])."
+    ]
+  },
+
+  "signature_identity_feature": {
+    "description": "A very thin flowing golden SVG line (#D4AF37) begins below the hero and subtly weaves through the entire page, connecting major sections.",
+    "symbolism": "Movement and breath. The flow should subconsciously resemble the letter 'Y' from Yuj.",
+    "implementation": "Use Framer Motion to draw the SVG line on scroll (`pathLength` animation using `useScroll`). The line should be 1px to 2px thick, gracefully intersecting between sections, looping slightly around the Gallery or Programs section, and branching at the Footer."
+  },
+
+  "visual_enhancers": {
+    "textures": [
+      "Faint hexagonal texture in the Hero section (opacity 3-5%), inspired by the logo shape."
+    ],
+    "glassmorphism": [
+      "Use for sticky nav on scroll and subtle UI overlays.",
+      "Style: `backdrop-blur-xl bg-[#0B0B0B]/70 border-b border-[#D4AF37]/10`."
+    ],
+    "shadows": [
+      "Soft, luxurious shadows. Dark mode ambient shadows. No harsh box-shadows.",
+      "`shadow-[0_8px_30px_rgb(0,0,0,0.5)]` for cards lifting off #0B0B0B."
+    ],
+    "corners": [
+      "Rounded corners for cards and chips (`rounded-2xl` or `rounded-3xl` for modern feel)."
+    ]
+  },
+
+  "motion_and_interactions": {
+    "libraries": [
+      "framer-motion (for scroll reveals, layout animations, line drawing)",
+      "lenis (MANDATORY for smooth momentum scrolling)"
+    ],
+    "rules": [
+      "Respect `prefers-reduced-motion`.",
+      "Hero Load: Masked line-by-line reveal of the headline ('Where Movement Meets Mindfulness').",
+      "Cards: Lift slightly on hover (`-translate-y-2` and gold border glow).",
+      "Buttons: Subtle scale or fill animation.",
+      "Sections: Fade-in and slight slide-up (`y: 40, opacity: 0` to `y: 0, opacity: 1`) on scroll.",
+      "Marquee: One slow, tasteful editorial marquee using Framer Motion or react-fast-marquee."
+    ]
+  },
+
+  "layout_and_sections": {
+    "hero": {
+      "bg": "Matte black (#0B0B0B) with faint hexagonal pattern and subtle spotlight/radial gradient.",
+      "content": "Centered circular Yuj Studio logo. Massive H1 'Where Movement / Meets Mindfulness'. Subheading 'Move. Learn. Create.'.",
+      "elements": "Elegant chips for programs, Primary CTA ('Book a Free Trial'), Secondary CTA ('Explore Programs').",
+      "parallax": "Subtle parallax on the background and floating program chips."
+    },
+    "about_manifesto": {
+      "style": "Numbered manifesto chapters. Editorial layout. Huge numbers (e.g., '01', '02') in gold.",
+      "layout": "Asymmetrical text blocks with plenty of negative space."
+    },
+    "programs": {
+      "grid": "Bento or clean 3x3 grid (9 cards). Cards must feel premium, using #171717 bg, subtle 1px gold border on hover.",
+      "items": "Yoga, Aerial Yoga, Zumba, Aerobics, Indian Dance, Western Dance, Drawing, Yoga Teacher Training, Kids Programs (Coming Soon)."
+    },
+    "more_than_fitness": {
+      "content": "Studio Rental, Trainer Services, Collaborations.",
+      "layout": "Horizontal scroll or staggered asymmetrical cards."
+    },
+    "why_choose_yuj": {
+      "content": "8 icon feature cards (Inclusive M&W, Certified Trainers, All Ages, Beginner Friendly, Holistic Wellness, Creative Learning, Positive Community, Flexible Timings).",
+      "style": "Minimalist icons (Phosphor or Lucide), #171717 cards, no clutter."
+    },
+    "gallery": {
+      "layout": "Masonry grid. Real photography with spotlight and clipped frames (e.g., rounded arches or strict rectangles with inner borders).",
+      "hover": "Grayscale to color on hover, or subtle scale-in."
+    },
+    "marquee": {
+      "content": "BREATHE • FLOW • TRANSFORM • MOVEMENT • MINDFULNESS",
+      "style": "Slow, outlined text (text-transparent stroke-gold) or massive #171717 text on #0B0B0B."
+    },
+    "founders": {
+      "content": "Meet the Visionaries. 2 portraits.",
+      "style": "Editorial profile cards."
+    },
+    "location_contact": {
+      "content": "Dumdum Private Road Bus Stop, Kolkata 700074, near WoW Momo + Google Maps embed. CTAs for WhatsApp/Phone/Email/Insta/FB.",
+      "layout": "Split section: Contact info and big CTA on the left, Map on the right."
+    }
+  },
+
+  "image_urls": {
+    "logo": "https://customer-assets-gfyr7b9c.emergentagent.net/job_b3b57860-b6e9-4a11-acbe-f159cf531133/artifacts/hyuqhj0x_Yuj_Logo_Circle.png",
+    "yoga": [
+      "https://images.unsplash.com/photo-1780130487332-b6a96a31b024?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHw0fHxwcmVtaXVtJTIweW9nYSUyMHN0dWRpbyUyMGRhcmt8ZW58MHx8fHwxNzg0NjQ2MjMzfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.pexels.com/photos/27399870/pexels-photo-27399870.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "aerial_yoga": [
+      "https://images.pexels.com/photos/4999487/pexels-photo-4999487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/6164039/pexels-photo-6164039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "dance": [
+      "https://images.unsplash.com/photo-1525426250015-4e6473cdbf17?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MTN8MHwxfHNlYXJjaHwzfHxjb250ZW1wb3JhcnklMjBkYW5jZXIlMjBtb3Zpbmd8ZW58MHx8fHwxNzg0NjQ2MjMzfDA&ixlib=rb-4.1.0&q=85",
+      "https://images.pexels.com/photos/7672132/pexels-photo-7672132.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "drawing": [
+      "https://images.unsplash.com/photo-1617905204653-6128268919fd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHw0fHxkcmF3aW5nJTIwYXJ0JTIwY2xhc3MlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc4NDY0NjIzM3ww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1629617953524-618ec29589ee?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzV8MHwxfHNlYXJjaHwzfHxkcmF3aW5nJTIwYXJ0JTIwY2xhc3MlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc4NDY0NjIzM3ww&ixlib=rb-4.1.0&q=85"
+    ],
+    "studio_gallery": [
+      "https://images.pexels.com/photos/20278578/pexels-photo-20278578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ]
+  },
+
+  "components_and_libraries": {
+    "icons": "lucide-react or @phosphor-icons/react (Thin or Light weight).",
+    "ui": "Shadcn UI (highly customized to remove the generic 'Vercel' look). Strip borders and standard radii, apply custom #171717 backgrounds, #D4AF37 accents, and luxury padding."
+  },
+
+  "universal_guidelines_for_main_agent": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this. Make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Don't make generic centered layouts. Use asymmetry, negative space, and typographic tension.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) only for overlays/nav.",
+    "You MUST NOT apply universal transition (e.g., `transition: all`). Always target specific properties to avoid breaking transforms.",
+    "You MUST NOT center align the app container in CSS. Let the layout control alignment.",
+    "Always use modern button styles (pill-shaped or crisp rectangles with a 1px border) with interaction animations.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Add `data-testid` attributes to all interactive and key informational elements (kebab-case, role-based).",
+    "Use ONLY `.js` or `.jsx` extensions for React components. Do not use TypeScript (`.tsx`)."
+  ],
+
+  "instructions_to_main_agent": [
+    "Install required dependencies: `npm install framer-motion @studio-freight/lenis lucide-react clsx tailwind-merge`.",
+    "Set up Lenis globally in the main App component for smooth scrolling.",
+    "Implement the signature 'Y' flowing golden SVG line as an absolute positioned or fixed background element that draws itself via framer-motion's `useScroll` and `useTransform` hooks.",
+    "For the hero hexagonal texture, use an SVG pattern or purely CSS radial gradients mixed with a repeating pattern, keeping opacity under 5%.",
+    "Ensure the design remains strictly within #0B0B0B, #171717, #D4AF37, and grayscale text tones. Avoid all pure whites for large surfaces."
+  ]
+}
