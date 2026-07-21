@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import SmoothScroll from "@/components/yuj/SmoothScroll";
-import SignatureLine from "@/components/yuj/SignatureLine";
 import Nav from "@/components/yuj/Nav";
 import Hero from "@/components/yuj/Hero";
 import About from "@/components/yuj/About";
@@ -23,8 +22,6 @@ export default function Home() {
     <main className="relative bg-[#0B0B0B] text-[#F6F6F6] overflow-hidden">
       <SmoothScroll />
       <Nav />
-      {/* Signature Y-line spans the entire document */}
-      <SignatureLine />
 
       <Hero />
       <About />
