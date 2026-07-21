@@ -43,22 +43,22 @@ export default function Nav() {
           : "bg-transparent border-b border-transparent"
       }`}
     >
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-6 md:px-10 py-4 md:py-5">
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between px-5 md:px-10 py-3 md:py-5">
         <a
           href="#top"
           data-testid={YUJ.navLogo}
-          className="flex items-center gap-3 group"
+          className="flex items-center gap-2.5 md:gap-3 group min-w-0"
         >
           <img
             src={LOGO}
             alt="Yuj Studio"
-            className="w-10 h-10 md:w-11 md:h-11 rounded-full object-cover ring-1 ring-[#D4AF37]/40"
+            className="w-9 h-9 md:w-11 md:h-11 rounded-full object-cover ring-1 ring-[#D4AF37]/40 shrink-0"
           />
-          <div className="leading-none">
-            <div className="font-serif-display text-lg md:text-xl tracking-wide text-white">
+          <div className="leading-none min-w-0">
+            <div className="font-serif-display text-base md:text-xl tracking-wide text-white truncate">
               Yuj Studio
             </div>
-            <div className="text-[10px] tracking-[0.28em] text-[#B8B8B8] uppercase mt-0.5">
+            <div className="hidden sm:block text-[10px] tracking-[0.28em] text-[#B8B8B8] uppercase mt-0.5">
               Breath · Flow · Transform
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function Nav() {
           <a
             href="#contact"
             data-testid={YUJ.ctaBookTrial + "-nav"}
-            className="hidden md:inline-flex btn-gold !py-3 !px-5 !text-[11px]"
+            className="!hidden lg:!inline-flex btn-gold !py-3 !px-5 !text-[11px]"
           >
             Book Trial
             <span className="arrow">→</span>
@@ -94,7 +94,7 @@ export default function Nav() {
             data-testid={YUJ.navMenuButton}
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
-            className="lg:hidden w-11 h-11 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#E7C65C]"
+            className="lg:hidden w-10 h-10 md:w-11 md:h-11 rounded-full border border-[#D4AF37]/30 flex items-center justify-center text-[#E7C65C]"
           >
             {open ? <X size={18} /> : <Menu size={18} />}
           </button>
