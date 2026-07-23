@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="hairline mt-16 md:mt-20" />
 
         <div className="mt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[10px] tracking-[0.28em] uppercase text-[#B8B8B8]">
-          <p>© {year} Yuj Studio · All rights reserved.</p>
+          <p>© {year} Yuj Studio · All rights reserved..</p>
           <p className="text-[#F6F6F6]/60">
             Crafted with breath in Kolkata.
           </p>
