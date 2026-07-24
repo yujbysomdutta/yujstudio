@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { YUJ } from "@/constants/testIds/yuj";
 
 const LOGO =
-  "https://customer-assets-gfyr7b9c.emergentagent.net/job_b3b57860-b6e9-4a11-acbe-f159cf531133/artifacts/hyuqhj0x_Yuj_Logo_Circle.png";
+  "https://yujstudio.in/images/Yuj_Logo_Circle.png";
 
 const HEADLINE_LINES = ["Where Movement", "Meets Mindfulness"];
 

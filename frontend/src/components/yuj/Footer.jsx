@@ -2,7 +2,7 @@ import { YUJ } from "@/constants/testIds/yuj";
 import { Instagram, Facebook, MessageCircle, Mail } from "lucide-react";
 
 const LOGO =
-  "https://customer-assets-gfyr7b9c.emergentagent.net/job_b3b57860-b6e9-4a11-acbe-f159cf531133/artifacts/hyuqhj0x_Yuj_Logo_Circle.png";
+  "https://yujstudio.in/images/Yuj_Logo_Circle.png";
 
 const QUICK = [
   { id: "about", label: "About" },
@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="hairline mt-16 md:mt-20" />
 
         <div className="mt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[10px] tracking-[0.28em] uppercase text-[#B8B8B8]">
-          <p>© {year} Yuj Studio · All rights reserved..</p>
+          <p>© {year} Yuj Studio · All rights reserved.</p>
           <p className="text-[#F6F6F6]/60">
             Crafted with breath in Kolkata.
           </p>

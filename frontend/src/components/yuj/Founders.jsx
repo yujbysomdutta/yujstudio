@@ -1,5 +1,7 @@
 import Reveal from "@/components/yuj/Reveal";
 import { YUJ } from "@/constants/testIds/yuj";
+import Emon from "../../assets/Emon.png";
+import Sourav from "../../assets/Sourav.png";
 
 const FOUNDERS = [
   {
@@ -7,8 +9,7 @@ const FOUNDERS = [
     name: "Somdutta Majumder",
     honorific: "Emon",
     role: "Founder · Managing Director",
-    image:
-      "https://customer-assets-eiarnc6j.emergentagent.net/job_yuj-studio-1/artifacts/1p9utkca_Emon.png",
+    image: Emon,
     bio: "With a Master's in Yoga, Somdutta transformed her own recovery from a slipped disc into a lifelong mission. Today, she combines yoga therapy, movement, and compassion to help people build strength, confidence, and healthier lives.",
     mission:
       "Helping people rediscover strength through movement, yoga and mindful living.",
@@ -20,8 +21,7 @@ const FOUNDERS = [
     name: "Sourav Saha",
     honorific: null,
     role: "Co-Founder · Strategy & Digital Advisor",
-    image:
-      "https://customer-assets-eiarnc6j.emergentagent.net/job_yuj-studio-1/artifacts/z81p1zkz_Sourav.png",
+    image: Sourav,
     bio: "With a background in consulting and technology, Sourav guides Yuj Studio's digital experience, branding and strategic initiatives to help build a modern, community-driven wellness brand.",
     mission:
       "Empowering wellness brands through purposeful strategy and digital innovation.",
